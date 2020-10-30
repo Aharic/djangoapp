@@ -2,14 +2,17 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 
-#Create table model for Users
+#Create table model f
 
 #Gear class as example of ForeignKey relation between tables for later
-#class gear(models.Model):
-#	gear_item=models.CharField(max_lenght=100)
-#	gear_class=models.CharField(max_length=50)
-#	gear_owner=models.ForeignKey(User, on_delete=models.CASCADE)
+class gear(models.Model):
+	gear_item=models.CharField(max_length=100)
+	gear_class=models.CharField(max_length=50)
+	gear_owner=models.ForeignKey(User, on_delete=models.CASCADE)
 
+	def __str__(self):
+		return self.gear_item
+# For reference, see yt web app module 5 
 
 class trails(models.Model):
 	trail_name=models.TextField()
@@ -26,5 +29,8 @@ class trails(models.Model):
 	state_id=models.IntegerField()
 	state_name=models.CharField(max_length=50)
 	url=models.SlugField(max_length=1000)
+
+	def __str__(self):
+		return self.trail_name
 
 

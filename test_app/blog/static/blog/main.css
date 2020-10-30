@@ -36,16 +36,16 @@ ul {
   margin-bottom: 20px;
 }
 
-.article-title {
+.trail-name {
   color: #444444;
 }
 
-a.article-title:hover {
+a.trail-name:hover {
   color: #428bca;
   text-decoration: none;
 }
-
-.article-content {
+.trail-description
+. {
   white-space: pre-line;
 }
 
@@ -55,7 +55,7 @@ a.article-title:hover {
   margin-right: 16px;
 }
 
-.article-metadata {
+.trail-data {
   padding-bottom: 1px;
   margin-bottom: 4px;
   border-bottom: 1px solid #e3e3e3

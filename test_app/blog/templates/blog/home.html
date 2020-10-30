@@ -4,12 +4,12 @@
 	{% for trail in trails %}
 		<article class="media content-section">
 		  <div class="media-body">
-		    <div class="article-metadata">
+		    <div class="trail-data">
 		      <a class="mr-2" href="#">Difficulty: {{ trail.difficulty }}</a>
-		      <small class="text-muted">{{ trail.location}}</small>
+		      <small class="text-muted">{{ trail.lat }} {{ trail.lng }}</small>
 		    </div>
-		    <h2><a class="article-title" href="#">{{ trail.trail_name }}</a></h2>
-		    <p class="article-content">{{ trail.description }}</p>
+		    <h2><a class="trail-name" href="#">{{ trail.trail_name }}</a></h2>
+		    <p class="trail-description">{{ trail.description }}</p>
 		  </div>
 		</article>
 	{% endfor %}
