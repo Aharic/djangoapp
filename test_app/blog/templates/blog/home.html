@@ -1,15 +1,15 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
-	{% for post in posts %}
+	{% for trail in trails %}
 		<article class="media content-section">
 		  <div class="media-body">
 		    <div class="article-metadata">
-		      <a class="mr-2" href="#">Difficulty: {{ post.difficulty }}</a>
-		      <small class="text-muted">{{ post.location}}</small>
+		      <a class="mr-2" href="#">Difficulty: {{ trail.difficulty }}</a>
+		      <small class="text-muted">{{ trail.location}}</small>
 		    </div>
-		    <h2><a class="article-title" href="#">{{ post.trail_name }}</a></h2>
-		    <p class="article-content">{{ post.description }}</p>
+		    <h2><a class="article-title" href="#">{{ trail.trail_name }}</a></h2>
+		    <p class="article-content">{{ trail.description }}</p>
 		  </div>
 		</article>
 	{% endfor %}

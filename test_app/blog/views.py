@@ -2,25 +2,25 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-posts = [
+trails = [
 	{
-		'difficulty': 'hard',
+		'difficulty': '5',
 		'trail_name': 'Devil\'s Hole',
 		'description': 'What a trail...it\'s a slap!',
 		'location': '35.92264 -81.88675'
 	},
 	{
-		'difficulty': 'moderate',
-		'trail_name': 'Looking Glass Rock Trail',
-		'description': 'Makes your legs go \'wooooooooooooo\'',
-		'location': '35.29084 -82.77646'
+		'difficulty': '3',
+		'trail_name': 'Looking Glass Trail',
+		'description': 'You love to camp on it',
+		'location': '34.80636 -82.32582'
 	}
 ]
 
 
 def home(request):
 	context = {
-		'posts': posts
+		'trails': trails
 	}
 	return render(request, 'blog/home.html', context)
 
