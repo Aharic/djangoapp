@@ -12,6 +12,10 @@ class gear(models.Model):
 
 	def __str__(self):
 		return self.gear_item
+
+	#strip the plural off the model class	
+	class Meta:
+		verbose_name_plural = "gear"
 # For reference, see yt web app module 5 
 
 class trails(models.Model):
@@ -33,4 +37,6 @@ class trails(models.Model):
 	def __str__(self):
 		return self.trail_name
 
-
+	#strip the plural off the model class
+	class Meta:
+		verbose_name_plural = "trails"
