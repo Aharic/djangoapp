@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import trails, gear
 
-# Register your models here.
+admin.site.register(trails)
+admin.site.register(gear)
+
